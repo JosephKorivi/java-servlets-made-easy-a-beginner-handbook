@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+        <context-param>
+            <param-name>username</param-name>
+            <param-value>system</param-value>
+        </context-param>
+        <context-param>
+            <param-name>password</param-name>
+            <param-value>abc</param-value>
+        </context-param>
+        <servlet>
+            <servlet-name>FirstServlet</servlet-name>
+            <servlet-class>com.example.configcontextdemo.FirstServlet</servlet-class>
+            <init-param>
+                <param-name>Pen</param-name>
+                <param-value>30</param-value>
+            </init-param>
+            <init-param>
+                <param-name>Book</param-name>
+                <param-value>300</param-value>
+            </init-param>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>FirstServlet</servlet-name>
+            <url-pattern>/FirstServlet</url-pattern>
+        </servlet-mapping>
+    <servlet>
+        <servlet-name>SecondServlet</servlet-name>
+        <servlet-class>com.example.configcontextdemo.SecondServlet</servlet-class>
+        <init-param>
+            <param-name>Shirt</param-name>
+            <param-value>1000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>Shoes</param-name>
+            <param-value>3000</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SecondServlet</servlet-name>
+        <url-pattern>/SecondServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

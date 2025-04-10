@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="formvalidation:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>formvalidation</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="formvalidation-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="formvalidation:war exploded" />
+    </root>
+  </artifact>
+</component>
